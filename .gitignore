@@ -1,0 +1,4 @@
+# Ignoriere alle mat-Dateien
+*.mat
+# Ignoriere das temp-Verzeichnis
+temp/
