@@ -75,8 +75,10 @@ imagesLam_03 = imagesLam_01;
 phi_01_true = 2*pi*(xy)/lam_01;
 waitPeriode = 0.05;  % <--------- FROM APP
 % preview(app.camera)
-folder = [app.rootDir '\tmp\Images\measurement\'];
-folder = [app.rootDir '\tmp\Images\'];
+% folder = [app.rootDir '\tmp\Images\measurement\'];
+% folder = [app.rootDir '\tmp\Messungen\Messschieber\'];
+folder = [app.rootDir '\tmp\Messungen\Stufen\'];
+% folder = [app.rootDir '\tmp\Messungen\Pyramide\'];
 for ii=0:N-1
     I = cos(phi_01_true-2*pi*ii/N);
     frame = uint8(rescale(I)*255);
